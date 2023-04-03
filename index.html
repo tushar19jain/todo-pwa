@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>ToDo-PWA</title>
+
+</head>
+<body>
+    <!--Creating the header for animated logo-->
+    <header>
+        <img src="/asset/ToDo.gif" alt="" srcset="">
+    </header>
+    <!--Creating a section for Intro heading-->
+    <section class="mainHeading">
+        <div class="firstRowHead"><h1>Hey</h1></div>
+        <div class="secondRowHead"><h2>Let's create some</h2><img src="/asset/tools.gif" alt="" srcset=""></div>
+    </section>
+    <!--Creating the next section to input some todo tasks-->
+    <section class="taskInput">
+    <form action="" id="newTask">
+        <input type="text" name="newTaskInput" id="newTaskInput" placeholder="What do you have planned?"><br>
+        <button onclick="addToTodo()" id="newTaskSubmit">Add Task</button>
+        <button  onclick="renderList()" id="showList" >Show</button>
+    </form>
+    </section>
+    <!--Creating task list-->
+        <div class="taskListLogo"><img src="/asset/tasksList.gif" alt="" srcset=""></div>
+        <main>
+
+            <section class="task-list">
+    
+                <div>
+                    <ul id="list">
+                    </ul>
+                </div>
+    
+            </section>
+    
+        </main>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
